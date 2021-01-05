@@ -9,18 +9,28 @@ import LaunchIcon from '@material-ui/icons/Launch';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import ArchiveIcon from '@material-ui/icons/Archive';
 import { Link } from "react-router-dom";
 import styles from '../style.module.css'; 
 
 
 export const mainListItems = (
   <div>
-    <Link to="/"  className={styles.defaultLink}> 
+    <Link to="/home"  className={styles.defaultLink}> 
         <ListItem button>
         <ListItemIcon>
             <DashboardIcon />
         </ListItemIcon>
         <ListItemText primary="Dashboard" />
+        </ListItem>
+    </Link>
+
+    <Link to="/estoque"  className={styles.defaultLink}> 
+        <ListItem button>
+            <ListItemIcon>
+                <ArchiveIcon />
+            </ListItemIcon>
+            <ListItemText primary="Estoque" />
         </ListItem>
     </Link>
 

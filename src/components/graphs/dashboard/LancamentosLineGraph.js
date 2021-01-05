@@ -9,12 +9,12 @@ import { ResponsiveLine } from '@nivo/line'
 
 export default function LancamentosLineGraph() {
     const data = [{
-          "id": "hobiie",
-          "color": "hsl(161, 70%, 50%)",
+          "id": "Saídas",
+          "color": "hsl(208, 100%, 50%)",
           "data": [
             {
               "x": "plane",
-              "y": 180
+              "y": 50
             },
             {
               "x": "helicopter",
@@ -63,12 +63,12 @@ export default function LancamentosLineGraph() {
           ]
         },
         {
-          "id": "Despesa",
+          "id": "Entradas",
           "color": "hsl(73, 70%, 50%)",
           "data": [
             {
               "x": "plane",
-              "y": 34
+              "y": 500
             },
             {
               "x": "helicopter",
@@ -116,60 +116,6 @@ export default function LancamentosLineGraph() {
             }
           ]
         },
-        {
-          "id": "Poupado",
-          "color": "hsl(105, 70%, 50%)",
-          "data": [
-            {
-              "x": "plane",
-              "y": 150
-            },
-            {
-              "x": "helicopter",
-              "y": 101
-            },
-            {
-              "x": "boat",
-              "y": 41
-            },
-            {
-              "x": "train",
-              "y": 36
-            },
-            {
-              "x": "subway",
-              "y": 82
-            },
-            {
-              "x": "bus",
-              "y": 77
-            },
-            {
-              "x": "car",
-              "y": 298
-            },
-            {
-              "x": "moto",
-              "y": 264
-            },
-            {
-              "x": "bicycle",
-              "y": 164
-            },
-            {
-              "x": "horse",
-              "y": 201
-            },
-            {
-              "x": "skateboard",
-              "y": 181
-            },
-            {
-              "x": "others",
-              "y": 71
-            }
-          ]
-        }
       ]
     return (
      <MyResponsiveLine data={data} />
@@ -209,6 +155,9 @@ const MyResponsiveLine = ({ data /* see data tab */ }) => (
         pointBorderWidth={2}
         pointBorderColor={{ from: 'serieColor' }}
         pointLabelYOffset={-12}
+        enableArea={true}
+        colors={{ scheme: 'set1' }}
+        areaBlendMode="difference"
         useMesh={true}
         legends={[
             {
