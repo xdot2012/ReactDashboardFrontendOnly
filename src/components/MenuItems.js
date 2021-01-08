@@ -25,7 +25,7 @@ export const mainListItems = (
         </ListItem>
     </Link>
 
-    <Link to="/estoque"  className={styles.defaultLink}> 
+    {/* <Link to="/estoque"  className={styles.defaultLink}> 
         <ListItem button>
             <ListItemIcon>
                 <ArchiveIcon />
@@ -41,7 +41,7 @@ export const mainListItems = (
             </ListItemIcon>
             <ListItemText primary="Lançametos" />
         </ListItem>
-    </Link>
+    </Link> */}
 {/*
     <Link to="/tacos"  className={styles.defaultLink}> 
         <ListItem button>
